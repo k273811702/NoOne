@@ -12,7 +12,7 @@
   * symchk.exe /r C:\Windows\SysWow64\user32.dll /s SRV*c:\symbols*http://msdl.microsoft.com/download/symbols
 
 # 功能OneDbg命令支持及示例
-命令参考windbg命令,注意16进制的地址需要加0x,不加会以10进制计算
+命令参考windbg命令,**注意16进制的地址需要加0x,不加会以10进制计算**
  * dt [[module!]!Name] [filed] [Address]     显示结构体 em: dt _PEB  0x401000;dt ntdll!_PEB
  * dt6 [[module!]!Name] [Address]    wow64进程下显示 64位的结构体  em: dt _PEB64
  * .reload [modulePath]   加载符号表   em：.reload C:\Windows\System32\ntoskrnl.exe
@@ -36,6 +36,6 @@
  * du address   显示unicode字符串
  * du8 address  显示utf8字符串
 
- * .sympath [path]  设置符号路径 em:.sympath SRV*E:\symbol*http://msdl.microsoft.com/download/symbols 
+ * .sympath [path]  设置符号路径 em:.sympath SRV\*E:\symbol\*http://msdl.microsoft.com/download/symbols 
 
  * x [[module!]Name]模糊查找符号  em:  x  ntdll!*PEB*; x ntkrnlmp!PsGet*
