@@ -11,3 +11,32 @@
   * symchk.exe /r C:\Windows\System32\user32.dll /s SRV*c:\symbols*http://msdl.microsoft.com/download/symbols
   * symchk.exe /r C:\Windows\SysWow64\user32.dll /s SRV*c:\symbols*http://msdl.microsoft.com/download/symbols
 
+# 功能OneDbg命令支持及示例
+命令参考windbg命令
+*显示命令
+dt [[module!]!Name] [Address]   em: dt _PEB;dt ntdll!_PEB
+dt6
+.re
+.cl
+
+ed"
+eb"
+ew"
+eq"
+
+dd"
+db"
+dw"
+dq"
+dds
+dbs
+dws
+dqs
+
+da"
+du"
+du8
+
+.sy
+
+x",
