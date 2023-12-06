@@ -36,6 +36,6 @@
  * du address   显示unicode字符串
  * du8 address  显示utf8字符串
 
- * .sympath [path]  设置符号路径 em:.sympath SRV\*E:\symbol\*http://msdl.microsoft.com/download/symbols 
+ * .sympath [path]  设置符号路径 em:.sympath SRV\*E:\symbol\*http://msdl.microsoft.com/download/symbols   BlackINT3大神的国内符号下载http://msdl.blackint3.com:88/download/symbols
 
  * x [[module!]Name]模糊查找符号  em:  x  ntdll!*PEB*; x ntkrnlmp!PsGet*
